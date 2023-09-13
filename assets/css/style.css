@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Blocks */
+
+.map {
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+
+.map img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.map__button {
+  position: absolute;
+  z-index: 3;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(106, 191, 75, 0.7);
+  border-radius: 50%;
+  transition: background 0.2s linear;
+}
+
+.map__button:hover {
+  transition: background 0.2s linear;
+  background-color: #6abf4b;
+}
+
+.map__button::before,
+.map__button::after {
+  content: "";
+  width: 1rem;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  top: 1.9rem;
+  left: 1.5rem;
+  z-index: 1;
+}
+
+.map__button::after {
+  transition: transform 0.2s linear;
+  transform: rotate(90deg);
+}
+
+.map__button span {
+  display: none;
+}
+
+.map__button.active {
+  width: auto;
+  height: 4rem;
+  padding: 1.1rem 1.5rem;
+  border-radius: 4rem;
+  background-color: #6abf4b;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  animation: none;
+}
+
+.map__button.active::after {
+  transition: transform 0.2s linear;
+  transform: rotate(0);
+}
+
+.map__button.active span {
+  margin-left: 2.5rem;
+  display: inline;
+}
+
+.map__button--bg--blue {
+  transition: background 0.2s linear;
+  background-color: rgba(56, 119, 238, 0.7);
+}
+
+.map__button--bg--blue.active {
+  background-color: #3877ee;
+}
+
+.map__button--bg--blue:hover {
+  transition: background 0.2s linear;
+  background-color: #3877ee;
+}
+
+.map__button:nth-child(2) {
+  top: 26%;
+  left: 30%;
+}
+
+.map__button:nth-child(3) {
+  top: 66%;
+  left: 23%;
+}
+
+.map__button:nth-child(4) {
+  top: 58%;
+  left: 56%;
+}
+
+.map__button:nth-child(5) {
+  top: 66%;
+  left: 83%;
+}
+
+.map__button:nth-child(6) {
+  top: 44%;
+  left: 76%;
+}
+
+.map__button:nth-child(7) {
+  top: 21%;
+  left: 71.5%;
+}
+
+.map__button:nth-child(8) {
+  top: 38%;
+  left: 60%;
+}
+
+.map__button:nth-child(9) {
+  bottom: 23%;
+  left: 57.5%;
+}
+
+.map__button:nth-child(10) {
+  top: 62%;
+  left: 68%;
+}
+
+.map__button:nth-child(11) {
+  top: 45%;
+  left: 35%;
+}
